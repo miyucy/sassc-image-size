@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "sassc-image-size"
-  spec.version       = "0.1.0"
+  spec.version       = "0.2.0"
   spec.authors       = ["miyucy"]
   spec.email         = ["fistfvck@gmail.com"]
 
@@ -18,5 +18,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "dimensions"
+  spec.add_dependency "sassc", ">= 2.0.0"
   spec.add_dependency "sassc-rails"
 end
